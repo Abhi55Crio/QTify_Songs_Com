@@ -1,0 +1,31 @@
+.moveInLeft-animation{
+    animation: MoveInLeft 1s ease-in;
+    transition: all 1s ease-out;
+}
+
+.moveInRight-animation{
+    animation: MoveInRight 1s ease-in;
+    transition: all 1s ease-out;
+}
+
+@keyframes MoveInLeft {
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes MoveInRight {
+    from{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,13 @@
+.section{
+    .wrapper{
+        font-size: 1.4rem;
+        display: flex;
+        gap: 4rem;
+        flex-wrap: wrap;
+    }
+
+    .toggleText{
+        color:chartreuse;
+        cursor: pointer;
+    }
+}

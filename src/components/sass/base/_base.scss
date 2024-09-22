@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    background-color: $color-black;
+    color: $color-white;
+    overflow-x: hidden;
+}
+
+img, svg, picture, canvas, video{
+    display: block;
+    max-width: 100%;;
+}
