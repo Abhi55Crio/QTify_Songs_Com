@@ -2,6 +2,16 @@ import axios from "axios";
 
 const ENDPOINT = "https://qtify-backend-labs.crio.do";
 
+export const getTopAlbums =async() => {
+  try{
+    const res = await axios.get(`${ENDPOINT}/albums/top`);
+    return res.data;
+  }catch(error)
+  {
+    console.error(error);
+  }
+}
+
 export const getNewAlbums = async () => {
   try {
     const res = await axios.get(`${ENDPOINT}/albums/new`);
